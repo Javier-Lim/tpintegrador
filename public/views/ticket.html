@@ -4,58 +4,150 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TP Integrador JS #2 </title>
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/codoacodo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
 </head>
 
 <body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img class="img-logo" src="../img/codoacodo.png" width="90px" alt="Logotipo" />
+                <span class="navbar-brand-text">Bs. As.</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">La conferencia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Los oradores</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conviértete en orador</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Comprar tickets</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
     <main>
-        <section class="container" style="padding: 8rem;">
+        <!-- tarjetas -->
+        <section class="container pt-3">
             <div class="row justify-content-center">
-                <div class="card text-center m-1 border-primary" style="width: 15rem;">
+                <div class="card text-center m-1 border-primary" style="width: 13rem;">
                     <div class="card-body">
                         <h5 class="card-title">Estudiante</h5>
                         <p class="card-text">Tiene un descuento</p>
                         <p class="card-text"><b>80%</b></p>
-                        <h6 class="card-subtitle text-muted">* presentar documentación</h6>
+                        <h6 class="card-subtitle text-muted form-text">* presentar documentación</h6>
                     </div>
                 </div>
 
-                <div class="card text-center m-1 border-success" style="width: 15rem;">
+                <div class="card text-center m-1 border-success" style="width: 13rem;">
                     <div class="card-body">
                         <h5 class="card-title">Trainee</h5>
                         <p class="card-text">Tiene un descuento</p>
                         <p class="card-text"><b>50%</b></p>
-                        <h6 class="card-subtitle text-muted">* presentar documentación</h6>
+                        <h6 class="card-subtitle text-muted form-text">* presentar documentación</h6>
                     </div>
                 </div>
 
-                <div class="card text-center m-1 border-warning" style="width: 15rem;">
+                <div class="card text-center m-1 border-warning" style="width: 13rem;">
                     <div class="card-body">
                         <h5 class="card-title">Junior</h5>
                         <p class="card-text">Tiene un descuento</p>
                         <p class="card-text"><b>15%</b></p>
-                        <h6 class="card-subtitle text-muted">* presentar documentación</h6>
+                        <h6 class="card-subtitle text-muted form-text">* presentar documentación</h6>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section>
+        <!-- Formulario -->
+        <section class="container w-50 pt-2">
             <!-- Texto -->
-            <div>
+            <div class="text-center">
                 <p>VENTA</p>
                 <h3>VALOR DE TICKET $200</h3>
             </div>
-            <!-- fORMULARIO -->
-            <form action="">
+            <!-- Categoria formulario -->
+            <form class="row g-3 p-3" id="formulario">
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Nombre">
+                </div>
+
+                <div class="col-6">
+                    <input type="text" class="form-control" placeholder="Apellido">
+                </div>
+
+                <div>
+                    <input type="email" id="correo" class="form-control" placeholder="Correo">
+                </div>
+
+                <div class="col-6">
+                    <label for="cantidad" class="form-label">Cantidad</label>
+                    <input type="text" id="cantidad" class="form-control" placeholder="Cantidad">
+                </div>
+
+                <div class="col-6">
+                    <label for="cantidad" class="form-label">Categoria</label>
+                    <select class="form-select" id="categoria">
+                        <option selected>Sin categoria</option>
+                        <option value="estudiante">Estudiante</option>
+                        <option value="trainee">Trainee</option>
+                        <option value="junior">Junior</option>
+                    </select>
+                </div>
+
+                <div>
+                    <p class="alert alert-info">Total a pagar: $</p>
+                </div>
+
+                <div class="d-grid col-6">
+                    <button class="btn text-white" id="borrar" style="background-color: #48C164;">Borrar</button>
+                </div>
+
+                <div class="d-grid col-6">
+                    <button class="btn text-white" id="resumen" style="background-color: #48C164;">Resumen</button>
+                </div>
 
             </form>
         </section>
     </main>
+
+    <footer class="container-fluid text-center text-light align-content-center bg-dark">
+        <div class="row  m-auto p-2 align-items-center" style="width: 80%; height: 100%; font-size: 0.8rem;">
+            <p class="col">Preguntas frecuentes</p>
+            <p class="col">Contactos</p>
+            <p class="col">Prensa</p>
+            <p class="col">Conferencias</3 <p class="col">Términos y condiciones</p>
+            <p class="col">Privacidad</p>
+            <p class="col">Estudiantes</p>
+        </div>
+
+        <div class="p-1" style="background-color: black;">
+            ©2022 Copyright
+            <a class="text-light" href="#">Javier Limachi A.</a>
+        </div>
+    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
