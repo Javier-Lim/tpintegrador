@@ -90,11 +90,11 @@
             </div>
             <!-- Categoria formulario -->
             <form class="row g-3 p-3" id="formulario">
-                <div class="col-6">
+                <div class="col-md-6">
                     <input type="text" class="form-control" placeholder="Nombre">
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6">
                     <input type="text" class="form-control" placeholder="Apellido">
                 </div>
 
@@ -102,15 +102,15 @@
                     <input type="email" id="correo" class="form-control" placeholder="Correo">
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6">
                     <label for="cantidad" class="form-label">Cantidad</label>
                     <input type="text" id="cantidad" class="form-control" placeholder="Cantidad">
                 </div>
 
-                <div class="col-6">
+                <div class="col-md-6">
                     <label for="cantidad" class="form-label">Categoria</label>
                     <select class="form-select" id="categoria">
-                        <option selected>Sin categoria</option>
+                        <option value="">Sin categoria</option>
                         <option value="estudiante">Estudiante</option>
                         <option value="trainee">Trainee</option>
                         <option value="junior">Junior</option>
@@ -118,15 +118,17 @@
                 </div>
 
                 <div>
-                    <p class="alert alert-info">Total a pagar: $</p>
+                    <p class="alert alert-info" id="totalAPagar">Total a pagar: $</p>
                 </div>
 
                 <div class="d-grid col-6">
-                    <button class="btn text-white" id="borrar" style="background-color: #48C164;">Borrar</button>
+                    <button class="btn text-white btnBorrar" id="borrar"
+                        style="background-color: #48C164;">Borrar</button>
                 </div>
 
                 <div class="d-grid col-6">
-                    <button class="btn text-white" id="resumen" style="background-color: #48C164;">Resumen</button>
+                    <button class="btn text-white btnResumen" id="resumen"
+                        style="background-color: #48C164;">Resumen</button>
                 </div>
 
             </form>
