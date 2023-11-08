@@ -1,3 +1,12 @@
+body {
+  background: rgb(36, 14, 0);
+  background: linear-gradient(
+    153deg,
+    rgba(36, 14, 0, 1) 0%,
+    rgba(255, 208, 116, 0.46935522255777307) 65%
+  );
+}
+
 .cantainer-fluid {
   background: url(../img/hawaii.jpg) no-repeat center center/cover,
     linear-gradient(166deg, #ffffff 50%, #000000c8 75%);
@@ -7,8 +16,6 @@
 }
 
 .texto-portada {
-  /* left: 0;
-  top: 0; */
   bottom: 10px;
   right: 50px;
 }
@@ -19,16 +26,3 @@
   height: 100%;
   object-fit: cover;
 }
-
-/* Box Costa */
-/* .box-costa {
-  background-color: dimgrey; 
-}*/
-
-/* .texto-costa {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-} */
-
-/* Footer */

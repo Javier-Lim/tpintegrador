@@ -13,11 +13,11 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark position-static">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="img-logo" src="public/img/codoacodo.png" width="90px" alt="Logotipo" />
-                <span class="navbar-brand-text">Bs. As.</span>
+            <a class="navbar-brand" href="/index.html"">
+                <img class=" img-logo" src="public/img/codoacodo.png" width="90px" alt="Logotipo" />
+            <span class="navbar-brand-text">Bs. As.</span>
             </a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -28,27 +28,27 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">La conferencia</a>
+                        <a class="nav-link" href="#conferencia">La conferencia</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Los oradores</a>
+                        <a class="nav-link" href="#oradores">Los oradores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">El lugar y la fecha</a>
+                        <a class="nav-link" href="#lugarFecha">El lugar y la fecha</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Conviértete en orador</a>
+                        <a class="nav-link" href="#convierteteEnOrador">Conviértete en orador</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="public/views/ticket.html">Comprar tickets</a>
+                        <a class="nav-link link-warning border rounded-2" href="public/views/ticket.html">Comprar
+                            tickets</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <main class="cantainer-fluid">
-        <!-- <img src="public/img/hawaii.jpg" class="card-img" alt="..."> -->
+    <main class="cantainer-fluid" id="conferencia">
         <div class="texto-portada col-md-6 position-absolute p-2">
             <h1 class="display-5 fw-bold text-light">Conf Bs As</h1>
             <p class="card-text text-light">Bs. As. llego por primera vez a Argentina. Un evento para compartir
@@ -61,15 +61,17 @@
                 evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti.
                 ¡Te
                 Esperamos!</p>
-            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
-                <button type="button" class="btn btn btn-secondary btn-lg px-4 gap-3">Quiero ser orador</button>
-                <button type="button" class="btn btn btn-secondary btn-lg px-4">Comprar tickets</button>
+            <div class="d-grid gap-2 d-sm-flex justify-content-sm-center text-decoration-none text-white">
+                <button type="button" class="btn btn btn-secondary btn-lg px-4 gap-3"><a href="#convierteteEnOrador"
+                        class="text-decoration-none text-white">Quiero ser orador</a> </button>
+                <button type="button" class="btn btn btn-warning btn-lg px-4"> <a href="/public/views/ticket.html"
+                        class="text-decoration-none text-dark">Comprar tickets</a></button>
             </div>
         </div>
 
     </main>
 
-    <section class="box-oradores container ">
+    <section class="box-oradores container " id="oradores">
         <h2 class="text-center">Oradores</h2>
         <div class="row justify-content-center">
             <div class="card m-3 pt-2" style="width: 20rem;">
@@ -110,7 +112,7 @@
         </div>
     </section>
 
-    <section class="box-costa container-fluid" style="background-color: dimgrey;">
+    <section class="box-costa container-fluid" style="background-color: dimgrey;" id="lugarFecha">
         <div class="row border border-secondary">
             <div class="col-md-6 p-0">
                 <img src="public/img/costa11.jpg" width="100%" alt="">
@@ -124,7 +126,7 @@
         </div>
     </section>
 
-    <form class="container d-flex  flex-column align-items-center my-4" style="width: 60%;">
+    <form class="container d-flex  flex-column align-items-center my-4" style="width: 60%;" id="convierteteEnOrador">
         <div class="row d-flex justify-content-between">
             <div class="text-center">
                 <h6>CONVIERTETE EN UN</h6>
