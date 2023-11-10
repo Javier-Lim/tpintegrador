@@ -7,6 +7,7 @@ body {
   );
 }
 
+/* Portada */
 .cantainer-fluid {
   background: url(../img/hawaii.jpg) no-repeat center center/cover,
     linear-gradient(166deg, #ffffff 50%, #000000c8 75%);
